@@ -100,19 +100,19 @@ Entorno práctico donde aplico, pruebo y documento configuraciones de sistemas y
 
 Scripts y prácticas de desarrollo desarrollados en Python:
 
-- **[Calculadora Modular en Python](https://github.com/adr1an70/repo_practica_python/tree/main/calculadora)**  
+- **[Calculadora Modular en Python](https://github.com/Rakroft/proyectos-python/tree/main/calculadora)**  
   Aplicación interactiva por consola con menú de 7 operaciones matemáticas. Cuenta con validación estricta de entradas y gestión de excepciones (`ZeroDivisionError`, `ValueError`).  
   *Stack:* `Python`
 
-- **[Cifrado y Descifrado César](https://github.com/adr1an70/repo_practica_python/blob/main/cesar.py)**  
+- **[Cifrado y Descifrado César](https://github.com/Rakroft/proyectos-python/tree/main/cifrado-cesar)**  
   Implementación del algoritmo criptográfico por sustitución con desplazamiento modular personalizable (1-25) para codificar y descodificar texto.  
   *Stack:* `Python`
 
-- **[Juegos de Lógica y Algoritmos en Consola](https://github.com/adr1an70/repo_practica_python/tree/main/juegos)**  
+- **[Juegos de Lógica y Algoritmos en Consola](https://github.com/Rakroft/proyectos-python/tree/main/juegos-logicos)**  
   Ejercicios prácticos de algoritmos, control de flujo y bucles, incluyendo juego de adivinanza numérica (rango 1 a 1000 con límite de intentos configurables y pistas dinámicas).  
   *Stack:* `Python`
 
-> Repositorio principal de prácticas: [`adr1an70/repo_practica_python`](https://github.com/adr1an70/repo_practica_python)
+> Repositorio principal de prácticas: [`Rakroft/proyectos-python`](https://github.com/Rakroft/proyectos-python)
 
 ---
 
