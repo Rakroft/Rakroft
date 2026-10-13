@@ -183,42 +183,14 @@ function animateParticles() {
 animateParticles();
 
 
-// ── Efecto Ripple al hacer clic ───────────────────────
+// ── Efecto de clic minimalista ────────────────────────
 document.addEventListener('click', (e) => {
-  // Ripple principal
-  const ripple = document.createElement('div');
-  ripple.classList.add('ripple');
-  ripple.style.cssText = `
-    left: ${e.clientX}px;
-    top:  ${e.clientY}px;
-    width: 80px;
-    height: 80px;
-    margin-left: -40px;
-    margin-top: -40px;
-    background: rgba(108, 99, 255, 0.35);
-  `;
-  document.body.appendChild(ripple);
-  setTimeout(() => ripple.remove(), 700);
-
-  // Partículas de explosión
-  const colors = ['#6c63ff', '#ff6584', '#43e97b', '#4facfe', '#f7971e'];
-  for (let i = 0; i < 8; i++) {
-    const dot = document.createElement('div');
-    dot.classList.add('click-burst');
-    const angle = (i / 8) * Math.PI * 2;
-    const dist  = 40 + Math.random() * 30;
-    const tx    = Math.cos(angle) * dist;
-    const ty    = Math.sin(angle) * dist;
-    dot.style.cssText = `
-      left: ${e.clientX}px;
-      top:  ${e.clientY}px;
-      background: ${colors[i % colors.length]};
-      --tx: ${tx}px;
-      --ty: ${ty}px;
-    `;
-    document.body.appendChild(dot);
-    setTimeout(() => dot.remove(), 700);
-  }
+  const pulse = document.createElement('div');
+  pulse.classList.add('click-pulse');
+  pulse.style.left = e.clientX + 'px';
+  pulse.style.top  = e.clientY + 'px';
+  document.body.appendChild(pulse);
+  setTimeout(() => pulse.remove(), 400);
 });
 
 
