@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adrián Ortega Martínez · Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ─── CURSOR PERSONALIZADO ─── -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ─── PARTÍCULAS DE FONDO ─── -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- ─── BARRA DE PROGRESO DE SCROLL ─── -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ─── NAV ─── -->
+  <nav id="navbar">
+    <!-- Contactos arriba a la izquierda -->
+    <div class="nav-contacts">
+      <a href="mailto:adrianoft07@gmail.com" class="contact-pill" title="Correo">
+        <span class="contact-icon">✉️</span>
+        <span class="contact-text">adrianoft07@gmail.com</span>
+      </a>
+      <a href="https://github.com/Rakroft" target="_blank" class="contact-pill" title="GitHub">
+        <span class="contact-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        </span>
+        <span class="contact-text">Rakroft</span>
+      </a>
+      <a href="tel:+34614184774" class="contact-pill" title="Teléfono">
+        <span class="contact-icon">📞</span>
+        <span class="contact-text">614 184 774</span>
+      </a>
+      <a href="https://linkedin.com/in/adrian-ortega-martinez" target="_blank" class="contact-pill" title="LinkedIn">
+        <span class="contact-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </span>
+        <span class="contact-text">LinkedIn</span>
+      </a>
+    </div>
+
+    <!-- Nav links -->
+    <div class="nav-links">
+      <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#proyectos" class="nav-link">Proyectos</a>
+      <a href="#formacion" class="nav-link">Formación</a>
+      <a href="#contacto" class="nav-link">Contacto</a>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">🎓 Estudiante de ASIR · 2º Curso</div>
+      <h1 class="hero-title reveal-up">
+        Adrián<br>
+        <span class="gradient-text">Ortega</span><br>
+        Martínez
+      </h1>
+      <p class="hero-subtitle reveal-up">
+        Administración de Sistemas Informáticos en Red<br>
+        <span class="highlight">DigitechFP · Barcelona</span>
+      </p>
+      <p class="hero-description reveal-up">
+        Apasionado por la infraestructura, las redes y la automatización.<br>
+        Construyendo el futuro digital, un servidor a la vez.
+      </p>
+      <div class="hero-ctas reveal-up">
+        <a href="#proyectos" class="btn btn-primary">Ver mis proyectos</a>
+        <a href="#contacto" class="btn btn-ghost">Contáctame</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="terminal-window reveal-right">
+        <div class="terminal-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">adrian@rakroft:~</span>
+        </div>
+        <div class="terminal-body">
+          <div class="terminal-line"><span class="prompt">$</span> <span class="cmd">whoami</span></div>
+          <div class="terminal-output">Adrián Ortega Martínez</div>
+          <div class="terminal-line"><span class="prompt">$</span> <span class="cmd">cat info.txt</span></div>
+          <div class="terminal-output">Estudiante ASIR 2º · DigitechFP Barcelona</div>
+          <div class="terminal-output">Linux · Windows Server · Redes · Python</div>
+          <div class="terminal-line"><span class="prompt">$</span> <span class="cmd">cat objetivo.txt</span></div>
+          <div class="terminal-output">Buscando prácticas FCT / FP Dual</div>
+          <div class="terminal-output">Disponibilidad inmediata 🚀</div>
+          <div class="terminal-line blink-cursor"><span class="prompt">$</span> <span class="cursor-blink">▮</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ─── SOBRE MÍ ─── -->
+  <section class="section" id="sobre-mi">
+    <div class="section-inner">
+      <div class="section-header reveal-up">
+        <span class="section-tag">01 · Sobre mí</span>
+        <h2 class="section-title">¿Quién soy?</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <p>
+            ¡Hola! Soy <strong>Adrián Ortega Martínez</strong>, un estudiante apasionado de 2º curso de
+            <strong>ASIR</strong> (Administración de Sistemas Informáticos en Red) en
+            <strong class="highlight">DigitechFP, Barcelona</strong>.
+          </p>
+          <p>
+            Me apasiona entender cómo funciona la tecnología por dentro: desde el montaje y
+            configuración de infraestructura física y virtual hasta el despliegue de servicios y la
+            resolución metódica de incidencias.
+          </p>
+          <p>
+            Trabajo con entornos <strong>Linux</strong> y <strong>Windows Server</strong> (Active Directory,
+            servicios de red y directivas), y utilizo <strong>Python</strong> y <strong>Bash</strong> para
+            automatizar tareas rutinarias y desarrollar scripts de apoyo.
+          </p>
+          <div class="about-badges">
+            <span class="badge">🔍 Proactivo</span>
+            <span class="badge">📚 Autodidacta</span>
+            <span class="badge">🛠️ Hands-on</span>
+            <span class="badge">📋 Documentación</span>
+          </div>
+        </div>
+        <div class="about-cards reveal-right">
+          <div class="info-card card-click" data-color="#6c63ff">
+            <div class="card-icon">🎓</div>
+            <div class="card-label">Estudia en</div>
+            <div class="card-value">DigitechFP Barcelona</div>
+          </div>
+          <div class="info-card card-click" data-color="#ff6584">
+            <div class="card-icon">📚</div>
+            <div class="card-label">Ciclo</div>
+            <div class="card-value">ASIR · 2º Curso</div>
+          </div>
+          <div class="info-card card-click" data-color="#43e97b">
+            <div class="card-icon">📍</div>
+            <div class="card-label">Ubicación</div>
+            <div class="card-value">Barcelona, España</div>
+          </div>
+          <div class="info-card card-click" data-color="#f7971e">
+            <div class="card-icon">🚀</div>
+            <div class="card-label">Objetivo</div>
+            <div class="card-value">Prácticas FCT / FP Dual</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ─── -->
+  <section class="section section-alt" id="skills">
+    <div class="section-inner">
+      <div class="section-header reveal-up">
+        <span class="section-tag">02 · Tecnologías</span>
+        <h2 class="section-title">Stack & Skills</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category reveal-up" style="--delay:0s">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🖥️</span>
+            <h3>Sistemas Operativos</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag linux">Linux (Debian/Ubuntu)</span>
+            <span class="skill-tag windows">Windows Server</span>
+            <span class="skill-tag windows">Active Directory</span>
+            <span class="skill-tag windows">GPO</span>
+            <span class="skill-tag">Windows 10/11</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal-up" style="--delay:0.1s">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🌐</span>
+            <h3>Redes</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag net">TCP/IP · OSI</span>
+            <span class="skill-tag net">Subnetting (VLSM/CIDR)</span>
+            <span class="skill-tag net">VLANs</span>
+            <span class="skill-tag net">DHCP · DNS</span>
+            <span class="skill-tag net">Routing básico</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal-up" style="--delay:0.2s">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">⚙️</span>
+            <h3>Virtualización</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag virt">Proxmox VE</span>
+            <span class="skill-tag virt">VMware Workstation</span>
+            <span class="skill-tag virt">VirtualBox</span>
+            <span class="skill-tag virt">Snapshots</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal-up" style="--delay:0.3s">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">💻</span>
+            <h3>Scripting & Dev</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag code">Python</span>
+            <span class="skill-tag code">Bash</span>
+            <span class="skill-tag code">MySQL</span>
+            <span class="skill-tag code">HTML5 · CSS3</span>
+            <span class="skill-tag code">Git · GitHub</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Barra de habilidades -->
+      <div class="skill-bars reveal-up">
+        <h3 class="skill-bars-title">Nivel de dominio</h3>
+        <div class="skill-bar-item">
+          <span class="skill-bar-label">Linux Administration</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="78" style="--bar-color:#43e97b"></div></div>
+          <span class="skill-bar-pct">78%</span>
+        </div>
+        <div class="skill-bar-item">
+          <span class="skill-bar-label">Windows Server / AD</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="72" style="--bar-color:#4facfe"></div></div>
+          <span class="skill-bar-pct">72%</span>
+        </div>
+        <div class="skill-bar-item">
+          <span class="skill-bar-label">Redes & Protocolos</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70" style="--bar-color:#a18cd1"></div></div>
+          <span class="skill-bar-pct">70%</span>
+        </div>
+        <div class="skill-bar-item">
+          <span class="skill-bar-label">Python</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="65" style="--bar-color:#f7971e"></div></div>
+          <span class="skill-bar-pct">65%</span>
+        </div>
+        <div class="skill-bar-item">
+          <span class="skill-bar-label">Bash Scripting</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="60" style="--bar-color:#ff6584"></div></div>
+          <span class="skill-bar-pct">60%</span>
+        </div>
+        <div class="skill-bar-item">
+          <span class="skill-bar-label">Virtualización</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75" style="--bar-color:#6c63ff"></div></div>
+          <span class="skill-bar-pct">75%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── LABORATORIOS ─── -->
+  <section class="section" id="laboratorios">
+    <div class="section-inner">
+      <div class="section-header reveal-up">
+        <span class="section-tag">03 · Práctica</span>
+        <h2 class="section-title">Laboratorios & Homelab</h2>
+      </div>
+      <div class="lab-grid">
+        <div class="lab-card reveal-up card-click" style="--delay:0s" data-color="#6c63ff">
+          <div class="lab-card-icon">🏢</div>
+          <h3>Windows Server & AD</h3>
+          <ul>
+            <li>Despliegue de bosque y dominio</li>
+            <li>OUs, usuarios, permisos (mínimo privilegio)</li>
+            <li>Directivas GPO y auditoría de seguridad</li>
+            <li>DNS dinámico + DHCP con reservas MAC</li>
+          </ul>
+        </div>
+        <div class="lab-card reveal-up card-click" style="--delay:0.1s" data-color="#43e97b">
+          <div class="lab-card-icon">🐧</div>
+          <h3>Servidores Linux</h3>
+          <ul>
+            <li>Debian/Ubuntu Server CLI puro</li>
+            <li>SSH seguro (autenticación por claves)</li>
+            <li>Permisos POSIX y gestión de usuarios</li>
+            <li>Automatización con <code>cron</code></li>
+          </ul>
+        </div>
+        <div class="lab-card reveal-up card-click" style="--delay:0.2s" data-color="#4facfe">
+          <div class="lab-card-icon">🌐</div>
+          <h3>Redes & Conectividad</h3>
+          <ul>
+            <li>Esquemas IP para redes simuladas</li>
+            <li>Segmentación con VLANs</li>
+            <li>Diagnóstico con ping, traceroute, ss…</li>
+            <li>Análisis de paquetes con tcpdump</li>
+          </ul>
+        </div>
+        <div class="lab-card reveal-up card-click" style="--delay:0.3s" data-color="#f7971e">
+          <div class="lab-card-icon">⚡</div>
+          <h3>Virtualización</h3>
+          <ul>
+            <li>Proxmox, VMware y VirtualBox</li>
+            <li>Escenarios multi-máquina cliente-servidor</li>
+            <li>Redes virtuales Host-Only / internas</li>
+            <li>Snapshots para pruebas seguras</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROYECTOS ─── -->
+  <section class="section section-alt" id="proyectos">
+    <div class="section-inner">
+      <div class="section-header reveal-up">
+        <span class="section-tag">04 · Proyectos</span>
+        <h2 class="section-title">Lo que he construido</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal-up card-click" style="--delay:0s">
+          <div class="project-card-top" style="background: linear-gradient(135deg, #6c63ff, #a18cd1)">
+            <span class="project-icon">🧮</span>
+          </div>
+          <div class="project-card-body">
+            <h3>Calculadora Modular</h3>
+            <p>Aplicación interactiva por consola con menú de 7 operaciones matemáticas. Validación estricta de entradas y gestión de excepciones.</p>
+            <div class="project-tags">
+              <span class="ptag">Python</span>
+              <span class="ptag">CLI</span>
+              <span class="ptag">Excepciones</span>
+            </div>
+            <a href="https://github.com/adr1an70/repo_practica_python/tree/main/calculadora" target="_blank" class="project-link">Ver en GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up card-click" style="--delay:0.1s">
+          <div class="project-card-top" style="background: linear-gradient(135deg, #ff6584, #f7971e)">
+            <span class="project-icon">🔐</span>
+          </div>
+          <div class="project-card-body">
+            <h3>Cifrado César</h3>
+            <p>Implementación del algoritmo criptográfico por sustitución con desplazamiento modular personalizable (1-25) para codificar y descodificar.</p>
+            <div class="project-tags">
+              <span class="ptag">Python</span>
+              <span class="ptag">Criptografía</span>
+              <span class="ptag">Algoritmos</span>
+            </div>
+            <a href="https://github.com/adr1an70/repo_practica_python/blob/main/cesar.py" target="_blank" class="project-link">Ver en GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up card-click" style="--delay:0.2s">
+          <div class="project-card-top" style="background: linear-gradient(135deg, #43e97b, #38f9d7)">
+            <span class="project-icon">🎮</span>
+          </div>
+          <div class="project-card-body">
+            <h3>Juegos de Lógica</h3>
+            <p>Ejercicios de algoritmos y control de flujo, incluyendo juego de adivinanza numérica con rango 1-1000, límite de intentos y pistas dinámicas.</p>
+            <div class="project-tags">
+              <span class="ptag">Python</span>
+              <span class="ptag">Algoritmos</span>
+              <span class="ptag">Lógica</span>
+            </div>
+            <a href="https://github.com/adr1an70/repo_practica_python/tree/main/juegos" target="_blank" class="project-link">Ver en GitHub →</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="projects-cta reveal-up">
+        <a href="https://github.com/adr1an70/repo_practica_python" target="_blank" class="btn btn-primary">
+          Ver repositorio completo en GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FORMACIÓN ─── -->
+  <section class="section" id="formacion">
+    <div class="section-inner">
+      <div class="section-header reveal-up">
+        <span class="section-tag">05 · Formación</span>
+        <h2 class="section-title">Dónde aprendo</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot" style="background: #6c63ff"></div>
+          <div class="timeline-content card-click" data-color="#6c63ff">
+            <div class="timeline-date">2024 – Actualidad</div>
+            <h3>CFGS · Administración de Sistemas Informáticos en Red (ASIR)</h3>
+            <div class="timeline-school">
+              <span class="school-badge">🏫 DigitechFP · Barcelona</span>
+            </div>
+            <p>Ciclo formativo de grado superior centrado en la administración de sistemas y redes corporativas. Actualmente cursando el 2º y último curso.</p>
+            <div class="timeline-modules">
+              <span class="module-tag">Sistemas operativos</span>
+              <span class="module-tag">Redes de área local</span>
+              <span class="module-tag">Seguridad informática</span>
+              <span class="module-tag">Servicios de red</span>
+              <span class="module-tag">Implantación de SO</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="availability-banner reveal-up">
+        <div class="avail-icon">🚀</div>
+        <div class="avail-text">
+          <strong>En búsqueda activa de prácticas formativas (FCT / FP Dual) o primer empleo junior</strong>
+          <span>Disponibilidad inmediata · Presencial Barcelona, híbrido o remoto</span>
+        </div>
+        <a href="#contacto" class="btn btn-primary">Contáctame</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACTO ─── -->
+  <section class="section section-alt" id="contacto">
+    <div class="section-inner">
+      <div class="section-header reveal-up">
+        <span class="section-tag">06 · Contacto</span>
+        <h2 class="section-title">Hablemos</h2>
+        <p class="section-desc">Si buscas un estudiante de ASIR proactivo para tu equipo, ¡escríbeme!</p>
+      </div>
+      <div class="contact-grid">
+        <a href="mailto:adrianoft07@gmail.com" class="contact-card card-click reveal-up" style="--delay:0s" data-color="#ff6584">
+          <div class="contact-card-icon">✉️</div>
+          <div class="contact-card-label">Correo electrónico</div>
+          <div class="contact-card-value">adrianoft07@gmail.com</div>
+        </a>
+        <a href="https://github.com/Rakroft" target="_blank" class="contact-card card-click reveal-up" style="--delay:0.1s" data-color="#6c63ff">
+          <div class="contact-card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </div>
+          <div class="contact-card-label">GitHub</div>
+          <div class="contact-card-value">@Rakroft</div>
+        </a>
+        <a href="tel:+34614184774" class="contact-card card-click reveal-up" style="--delay:0.2s" data-color="#43e97b">
+          <div class="contact-card-icon">📞</div>
+          <div class="contact-card-label">Teléfono</div>
+          <div class="contact-card-value">614 184 774</div>
+        </a>
+        <a href="https://linkedin.com/in/adrian-ortega-martinez" target="_blank" class="contact-card card-click reveal-up" style="--delay:0.3s" data-color="#4facfe">
+          <div class="contact-card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </div>
+          <div class="contact-card-label">LinkedIn</div>
+          <div class="contact-card-value">adrian-ortega-martinez</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-name">Adrián Ortega Martínez</span>
+        <span class="footer-role">ASIR · DigitechFP Barcelona</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/Rakroft" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/adrian-ortega-martinez" target="_blank">LinkedIn</a>
+        <a href="mailto:adrianoft07@gmail.com">Email</a>
+      </div>
+      <div class="footer-copy">
+        Hecho con 💜 en Barcelona · 2025
+      </div>
+    </div>
+  </footer>
+
+  <!-- ─── RIPPLE CLICK EFFECT ─── -->
+  <script src="script.js"></script>
+</body>
+</html>

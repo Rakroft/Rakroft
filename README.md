@@ -5,18 +5,29 @@
 </picture>
 
 <p align="center">
+  <a href="https://rakroft.github.io/Rakroft/" target="_blank">
+    <img src="https://img.shields.io/badge/🌐_Portfolio_Web-Ver_ahora-6c63ff?style=for-the-badge&labelColor=0a0a0f" alt="Portfolio Web"/>
+  </a>
+</p>
+
+<p align="center">
   <a href="https://linkedin.com/in/adrian-ortega-martinez"><b>LinkedIn</b></a>
   &nbsp;&nbsp;·&nbsp;&nbsp;
   <a href="mailto:adrianoft07@gmail.com"><b>adrianoft07@gmail.com</b></a>
   &nbsp;&nbsp;·&nbsp;&nbsp;
   <a href="https://github.com/Rakroft"><b>GitHub (@Rakroft)</b></a>
+  &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="tel:+34614184774"><b>614 184 774</b></a>
 </p>
+
+> 🌐 **[Ver mi Portfolio Web completo →](https://rakroft.github.io/Rakroft/)**  
+> Diseño animado · Proyectos · Skills · Contacto
 
 ---
 
 ## Sobre mí
 
-¡Hola! Soy **Adrián Ortega Martínez**, estudiante de 2º curso de **ASIR** (Administración de Sistemas Informáticos en Red) en Barcelona.
+¡Hola! Soy **Adrián Ortega Martínez**, estudiante de 2º curso de **ASIR** (Administración de Sistemas Informáticos en Red) en **DigitechFP, Barcelona**.
 
 Me apasiona entender cómo funciona la tecnología por dentro: desde el montaje y configuración de infraestructura física y virtual hasta el despliegue de servicios y la resolución metódica de incidencias.
 
@@ -108,7 +119,7 @@ Scripts y prácticas de desarrollo desarrollados en Python:
 ## Formación Académica
 
 - **CFGS Administración de Sistemas Informáticos en Red (ASIR)**  
-  Barcelona · 2º curso (actualmente cursando).
+  **DigitechFP** · Barcelona · 2º curso (actualmente cursando).
 
 ---
 
@@ -124,6 +135,8 @@ Scripts y prácticas de desarrollo desarrollados en Python:
 
 Si estás buscando un estudiante de ASIR proactivo para incorporar a tu equipo técnico, puedes contactarme a través de:
 
+- **Portfolio:** [rakroft.github.io/Rakroft](https://rakroft.github.io/Rakroft/)
 - **LinkedIn:** [adrian-ortega-martinez](https://linkedin.com/in/adrian-ortega-martinez)
 - **Correo electrónico:** [adrianoft07@gmail.com](mailto:adrianoft07@gmail.com)
 - **GitHub:** [@Rakroft](https://github.com/Rakroft)
+- **Teléfono:** [614 184 774](tel:+34614184774)
