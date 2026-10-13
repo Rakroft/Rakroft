@@ -1,95 +1,129 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg">
-  <img alt="Adrián Ortega Martínez, administración de sistemas y redes. Estudiante de 2º de ASIR en Barcelona. Disponible ya para prácticas y empleo." src="assets/hero-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="hero-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="hero-light.svg">
+  <img alt="Adrián Ortega Martínez - Administración de sistemas y redes | Estudiante de 2º de ASIR" src="hero-light.svg" width="100%">
 </picture>
 
 <p align="center">
   <a href="https://linkedin.com/in/adrian-ortega-martinez"><b>LinkedIn</b></a>
   &nbsp;&nbsp;·&nbsp;&nbsp;
   <a href="mailto:adrianoft07@gmail.com"><b>adrianoft07@gmail.com</b></a>
-  <!-- Cuando tengas portfolio, añade aquí:
   &nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="https://TU-WEB"><b>Portfolio</b></a> -->
+  <a href="https://github.com/Rakroft"><b>GitHub (@Rakroft)</b></a>
 </p>
+
+---
 
 ## Sobre mí
 
-Tengo 18 años y estudio 2º de **ASIR** (Administración de Sistemas Informáticos en Red) en Barcelona. Lo que más me gusta es entender cómo funcionan los sistemas por dentro: montarlos, configurarlos, romperlos y volver a arreglarlos.
+¡Hola! Soy **Adrián Ortega Martínez**, estudiante de 2º curso de **ASIR** (Administración de Sistemas Informáticos en Red) en Barcelona.
 
-Trabajo con **Linux, Windows Server, Active Directory, redes y virtualización**, y uso **Python y Bash** para automatizar lo que se pueda y practicar lógica de programación. Soy proactivo, aprendo rápido y me gusta dejar documentado lo que hago.
+Me apasiona entender cómo funciona la tecnología por dentro: desde el montaje y configuración de infraestructura física y virtual hasta el despliegue de servicios y la resolución metódica de incidencias.
+
+Trabajo con entornos **Linux** y **Windows Server** (Active Directory, servicios de red y directivas), y utilizo **Python** y **Bash** para automatizar tareas rutinarias y desarrollar scripts de apoyo. Me considero una persona proactiva, con alta capacidad de aprendizaje autodidacta y un fuerte compromiso con las buenas prácticas y la documentación técnica.
 
 > [!NOTE]
-> Estoy **buscando prácticas o mi primer empleo** en sistemas, redes o soporte IT. Puedo empezar ya, en remoto (mi preferencia), híbrido o presencial.
+> **Objetivo:** En búsqueda activa de **prácticas formativas (FCT / DUAL) o primer empleo junior** en administración de sistemas, gestión de redes o soporte técnico IT.  
+> **Disponibilidad:** Inmediata · Presencial en Barcelona, híbrido o remoto.
+
+---
+
+## Tecnologías y Competencias
+
+Organizadas según las áreas técnicas trabajadas en mi formación y laboratorios:
+
+- **Sistemas Operativos:**
+  - **Linux:** Instalación, administración y securización en Debian y Ubuntu Server (entornos CLI).
+  - **Windows Server:** Despliegue de controladores de dominio (Active Directory DS), gestión de usuarios/grupos y directivas de grupo (GPO).
+  - **Windows Desktop:** Configuración, soporte y resolución de incidencias en Windows 10/11.
+
+- **Redes:**
+  - **Fundamentos y Protocolos:** Modelo OSI, pila TCP/IP, direccionamiento IPv4 y cálculo de subredes (VLSM/CIDR).
+  - **Conmutación y Enrutamiento:** Segmentación de tráfico mediante VLANs, configuración de enlaces troncales y enrutamiento básico.
+  - **Servicios de Red:** Despliegue y administración de servidores DHCP y DNS.
+
+- **Virtualización:**
+  - **Hipervisores:** Creación y gestión de máquinas virtuales con Proxmox VE, VMware Workstation y VirtualBox.
+  - **Laboratorios Aislados:** Configuración de conmutadores virtuales y redes internas para pruebas seguras de topologías cliente-servidor.
+  - **Gestión:** Uso de instantáneas (*snapshots*) y plantillas para recuperación rápida ante fallos.
+
+- **Scripting:**
+  - **Bash:** Automatización de tareas administrativas, copias de seguridad y gestión de procesos en Linux.
+  - **Python:** Creación de scripts, lógica algorítmica, validación de datos y tratamiento de excepciones.
+  - **Bases de Datos:** Consultas relacionales y gestión básica con MySQL.
+
+- **Desarrollo Web y Herramientas:**
+  - **Web:** Maquetación estructurada con HTML5 y estilos con CSS3.
+  - **Control de Versiones:** Git y GitHub para control de versiones y documentación de proyectos.
+
+---
+
+## Laboratorios y Homelab
+
+Entorno práctico donde aplico, pruebo y documento configuraciones de sistemas y redes:
+
+- **Windows Server y Active Directory:**
+  - Despliegue de bosque y dominio en Windows Server.
+  - Creación de Unidades Organizativas (OUs), altas/bajas de usuarios y asignación de permisos según el principio de mínimo privilegio.
+  - Implementación de directivas de grupo (GPO) para estandarización de equipos cliente y auditoría de seguridad.
+  - Configuración de DNS dinámico y servidor DHCP con ámbitos y reservas por dirección MAC.
+
+- **Servidores Linux:**
+  - Puesta en marcha de instancias Debian y Ubuntu Server sin entorno gráfico.
+  - Configuración de acceso remoto seguro mediante SSH (autenticación obligatoria por par de claves, desactivación de login directo de root).
+  - Gestión de permisos POSIX (UGO/RWX), propietarios y automatización de tareas con `cron`.
+
+- **Redes y Conectividad:**
+  - Cálculo y asignación de esquemas de direccionamiento IP para redes locales simuladas.
+  - Segmentación departamental mediante VLANs para aislar tráfico y mejorar la seguridad.
+  - Diagnóstico y resolución de incidencias de conectividad con herramientas estándar (`ping`, `traceroute`, `ss`, `netstat`, `ip`, `tcpdump`).
+
+- **Virtualización:**
+  - Implementación de escenarios multi-máquina en Proxmox y VirtualBox simulando entornos cliente-servidor.
+  - Creación de redes virtuales internas (*Host-Only* / red interna) para aislamiento respecto a la red física.
+  - Gestión de instantáneas (*snapshots*) para pruebas seguras y puntos de restauración.
+
+---
 
 ## Proyectos
 
-| | proyecto | qué hace | stack |
-|:--|:--|:--|:--|
-| 🧮 | **Calculadora en Python** | Menú de 7 operaciones con validación de entradas y control de división entre cero | `Python` |
-| 🔐 | **Cifrado César** | Cifra y descifra mensajes con un desplazamiento de 1 a 25 | `Python` |
-| 🎯 | **Juego de adivinanza** | Adivina un número entre 1 y 1000 con un número de intentos que eliges tú, con pistas de más alto o más bajo | `Python` |
+Scripts y prácticas de desarrollo desarrollados en Python:
 
-<!-- Añade el enlace al repo en cada proyecto, por ejemplo:
-| 🧮 | **[Calculadora en Python](https://github.com/adr1an70/NOMBRE-REPO)** | ... -->
+- **[Calculadora Modular en Python](https://github.com/adr1an70/repo_practica_python/tree/main/calculadora)**  
+  Aplicación interactiva por consola con menú de 7 operaciones matemáticas. Cuenta con validación estricta de entradas y gestión de excepciones (`ZeroDivisionError`, `ValueError`).  
+  *Stack:* `Python`
 
-## Laboratorios
+- **[Cifrado y Descifrado César](https://github.com/adr1an70/repo_practica_python/blob/main/cesar.py)**  
+  Implementación del algoritmo criptográfico por sustitución con desplazamiento modular personalizable (1-25) para codificar y descodificar texto.  
+  *Stack:* `Python`
 
-Aquí iré documentando mis prácticas de ASIR y mi laboratorio en casa: qué monté, cómo lo configuré y qué aprendí.
+- **[Juegos de Lógica y Algoritmos en Consola](https://github.com/adr1an70/repo_practica_python/tree/main/juegos)**  
+  Ejercicios prácticos de algoritmos, control de flujo y bucles, incluyendo juego de adivinanza numérica (rango 1 a 1000 con límite de intentos configurables y pistas dinámicas).  
+  *Stack:* `Python`
 
-<!-- Plantilla para cada laboratorio (cópiala y rellénala):
+> Repositorio principal de prácticas: [`adr1an70/repo_practica_python`](https://github.com/adr1an70/repo_practica_python)
 
-### Nombre del laboratorio
-**Objetivo:** qué querías conseguir.
-**Qué monté:** máquinas virtuales, red, servicios...
-**Qué aprendí:** lo más importante.
-`Linux` `Active Directory` `...`
--->
+---
 
-## Stack
+## Formación Académica
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/stack-light.svg">
-  <img alt="Stack en tres bloques. Sistemas y redes: Linux, Windows Server, Active Directory, Redes, Virtualización. Scripting y datos: Python, Bash, MySQL. Web: HTML, CSS." src="assets/stack-light.svg" width="100%">
-</picture>
+- **CFGS Administración de Sistemas Informáticos en Red (ASIR)**  
+  Barcelona · 2º curso (actualmente cursando).
 
-<sub>Diagrama generado con [`assets/gen_assets.py`](assets/gen_assets.py): para añadir o quitar tecnologías, edita la lista `TIERS` y vuelve a ejecutarlo.</sub>
+---
 
-## Formación
+## Disponibilidad
 
-| | |
-|:--|:--|
-| **CFGS Administración de Sistemas Informáticos en Red (ASIR)** | Barcelona · 2º curso |
+- **Modalidad:** Presencial (área de Barcelona), híbrido o remoto.
+- **Objetivo:** Prácticas formativas (FCT / FP Dual) o primer empleo junior.
+- **Incorporación:** Inmediata.
+
+---
 
 ## Contacto
 
-Busco **prácticas o un puesto junior** en un equipo de sistemas, redes o soporte donde pueda aprender de gente con experiencia y aportar desde el primer día.
+Si estás buscando un estudiante de ASIR proactivo para incorporar a tu equipo técnico, puedes contactarme a través de:
 
-Barcelona, con preferencia por el trabajo remoto. Disponible desde ya.
-
-<p align="center">
-  <a href="mailto:adrianoft07@gmail.com"><b>adrianoft07@gmail.com</b></a>
-  &nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="https://linkedin.com/in/adrian-ortega-martinez"><b>LinkedIn</b></a>
-</p>
-
-## Actividad en GitHub
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=adr1an70&theme=tokyonight&hide_border=true&bg_color=0B1220&title_color=2DD4BF&icon_color=60A5FA">
-    <img alt="Estadísticas de GitHub de adr1an70" src="https://github-readme-stats.vercel.app/api?username=adr1an70&hide_border=true&bg_color=F7FAFC&title_color=0F9D8F&icon_color=2563EB&text_color=0F172A" height="165">
-  </picture>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=adr1an70&layout=compact&theme=tokyonight&hide_border=true&bg_color=0B1220&title_color=2DD4BF">
-    <img alt="Lenguajes más usados por adr1an70" src="https://github-readme-stats.vercel.app/api/top-langs/?username=adr1an70&layout=compact&hide_border=true&bg_color=F7FAFC&title_color=0F9D8F&text_color=0F172A" height="165">
-  </picture>
-</p>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://nirzak-streak-stats.vercel.app/?user=adr1an70&theme=dark&hide_border=true&background=0B1220&ring=2DD4BF&fire=60A5FA&currStreakLabel=2DD4BF">
-    <img alt="Racha de contribuciones de adr1an70" src="https://nirzak-streak-stats.vercel.app/?user=adr1an70&theme=default&hide_border=true&background=F7FAFC&ring=0F9D8F&fire=2563EB&currStreakLabel=0F9D8F" height="165">
-  </picture>
-</p>
+- **LinkedIn:** [adrian-ortega-martinez](https://linkedin.com/in/adrian-ortega-martinez)
+- **Correo electrónico:** [adrianoft07@gmail.com](mailto:adrianoft07@gmail.com)
+- **GitHub:** [@Rakroft](https://github.com/Rakroft)
