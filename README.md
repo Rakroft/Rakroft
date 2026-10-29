@@ -16,7 +16,6 @@
   <a href="mailto:adrianoft07@gmail.com"><b>adrianoft07@gmail.com</b></a>
   &nbsp;&nbsp;·&nbsp;&nbsp;
   <a href="https://github.com/Rakroft"><b>GitHub (@Rakroft)</b></a>
-  &nbsp;&nbsp;·&nbsp;&nbsp;
 </p>
 
 > 🌐 **[Ver mi Portfolio Web completo →](https://rakroft.github.io/Rakroft/)**  
