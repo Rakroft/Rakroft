@@ -17,7 +17,6 @@
   &nbsp;&nbsp;·&nbsp;&nbsp;
   <a href="https://github.com/Rakroft"><b>GitHub (@Rakroft)</b></a>
   &nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="tel:+34614184774"><b>614 184 774</b></a>
 </p>
 
 > 🌐 **[Ver mi Portfolio Web completo →](https://rakroft.github.io/Rakroft/)**  
@@ -139,4 +138,4 @@ Si estás buscando un estudiante de ASIR proactivo para incorporar a tu equipo t
 - **LinkedIn:** [adrian-ortega-martinez](https://linkedin.com/in/adrian-ortega-martinez)
 - **Correo electrónico:** [adrianoft07@gmail.com](mailto:adrianoft07@gmail.com)
 - **GitHub:** [@Rakroft](https://github.com/Rakroft)
-- **Teléfono:** [614 184 774](tel:+34614184774)
+
